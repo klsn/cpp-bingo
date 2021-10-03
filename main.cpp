@@ -55,8 +55,8 @@ int main() {
 		if (hit.at(i).at(i).at(i) != 1) break;
 		if (i == 4) bingo = true; 
 	}
-	for (int i=0;i<5;i++) for (int j=0;j<5;j++){
-		if (hit.at(i).at(i).at(4-j) != 1) break;
+	for (int i=0;i<5;i++){
+		if (hit.at(i).at(i).at(4-i) != 1) break;
 		if (i == 4) bingo = true; 
 	}
 
